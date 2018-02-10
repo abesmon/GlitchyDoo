@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		375128F4202F42B10021CA35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375128F3202F42B10021CA35 /* AppDelegate.swift */; };
-		375128F6202F42B10021CA35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375128F5202F42B10021CA35 /* ViewController.swift */; };
+		375128F6202F42B10021CA35 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375128F5202F42B10021CA35 /* MainVC.swift */; };
 		375128F9202F42B10021CA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375128F7202F42B10021CA35 /* Main.storyboard */; };
 		375128FB202F42B10021CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375128FA202F42B10021CA35 /* Assets.xcassets */; };
 		375128FE202F42B10021CA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375128FC202F42B10021CA35 /* LaunchScreen.storyboard */; };
+		37512907202F43600021CA35 /* LineriarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37512905202F43600021CA35 /* LineriarVC.swift */; };
+		37512908202F43600021CA35 /* LineriarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37512906202F43600021CA35 /* LineriarVC.xib */; };
+		3751290A202F488B0021CA35 /* Bool_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37512909202F488B0021CA35 /* Bool_ext.swift */; };
+		3751290C202F48D50021CA35 /* Randomable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751290B202F48D50021CA35 /* Randomable.swift */; };
+		3751290E202F4A580021CA35 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751290D202F4A580021CA35 /* ScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		375128F0202F42B10021CA35 /* GlitchyDoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlitchyDoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375128F3202F42B10021CA35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		375128F5202F42B10021CA35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		375128F5202F42B10021CA35 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		375128F8202F42B10021CA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		375128FA202F42B10021CA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		375128FD202F42B10021CA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375128FF202F42B10021CA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37512905202F43600021CA35 /* LineriarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineriarVC.swift; sourceTree = "<group>"; };
+		37512906202F43600021CA35 /* LineriarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineriarVC.xib; sourceTree = "<group>"; };
+		37512909202F488B0021CA35 /* Bool_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool_ext.swift; sourceTree = "<group>"; };
+		3751290B202F48D50021CA35 /* Randomable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomable.swift; sourceTree = "<group>"; };
+		3751290D202F4A580021CA35 /* ScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,8 @@
 		375128E7202F42B10021CA35 = {
 			isa = PBXGroup;
 			children = (
+				3751290D202F4A580021CA35 /* ScreenView.swift */,
+				3751290B202F48D50021CA35 /* Randomable.swift */,
 				375128F2202F42B10021CA35 /* GlitchyDoo */,
 				375128F1202F42B10021CA35 /* Products */,
 			);
@@ -55,11 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				375128F3202F42B10021CA35 /* AppDelegate.swift */,
-				375128F5202F42B10021CA35 /* ViewController.swift */,
+				375128F5202F42B10021CA35 /* MainVC.swift */,
 				375128F7202F42B10021CA35 /* Main.storyboard */,
 				375128FA202F42B10021CA35 /* Assets.xcassets */,
 				375128FC202F42B10021CA35 /* LaunchScreen.storyboard */,
 				375128FF202F42B10021CA35 /* Info.plist */,
+				37512905202F43600021CA35 /* LineriarVC.swift */,
+				37512906202F43600021CA35 /* LineriarVC.xib */,
+				37512909202F488B0021CA35 /* Bool_ext.swift */,
 			);
 			path = GlitchyDoo;
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 			files = (
 				375128FE202F42B10021CA35 /* LaunchScreen.storyboard in Resources */,
 				375128FB202F42B10021CA35 /* Assets.xcassets in Resources */,
+				37512908202F43600021CA35 /* LineriarVC.xib in Resources */,
 				375128F9202F42B10021CA35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375128F6202F42B10021CA35 /* ViewController.swift in Sources */,
+				3751290E202F4A580021CA35 /* ScreenView.swift in Sources */,
+				3751290C202F48D50021CA35 /* Randomable.swift in Sources */,
+				375128F6202F42B10021CA35 /* MainVC.swift in Sources */,
+				3751290A202F488B0021CA35 /* Bool_ext.swift in Sources */,
+				37512907202F43600021CA35 /* LineriarVC.swift in Sources */,
 				375128F4202F42B10021CA35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 548GRBZ3D6;
 				INFOPLIST_FILE = GlitchyDoo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.syrupmg.GlitchyDoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 548GRBZ3D6;
 				INFOPLIST_FILE = GlitchyDoo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.syrupmg.GlitchyDoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

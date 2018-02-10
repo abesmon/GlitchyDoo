@@ -17,6 +17,8 @@
 		3751290A202F488B0021CA35 /* Bool_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37512909202F488B0021CA35 /* Bool_ext.swift */; };
 		3751290C202F48D50021CA35 /* Randomable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751290B202F48D50021CA35 /* Randomable.swift */; };
 		3751290E202F4A580021CA35 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751290D202F4A580021CA35 /* ScreenView.swift */; };
+		37512911202F6C7C0021CA35 /* ScreenFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37512910202F6C7C0021CA35 /* ScreenFilter.swift */; };
+		37512913202F6CA70021CA35 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37512912202F6CA70021CA35 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		37512909202F488B0021CA35 /* Bool_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool_ext.swift; sourceTree = "<group>"; };
 		3751290B202F48D50021CA35 /* Randomable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomable.swift; sourceTree = "<group>"; };
 		3751290D202F4A580021CA35 /* ScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
+		37512910202F6C7C0021CA35 /* ScreenFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFilter.swift; sourceTree = "<group>"; };
+		37512912202F6CA70021CA35 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,8 @@
 		375128E7202F42B10021CA35 = {
 			isa = PBXGroup;
 			children = (
-				3751290D202F4A580021CA35 /* ScreenView.swift */,
+				37512912202F6CA70021CA35 /* Utils.swift */,
+				3751290F202F6C670021CA35 /* ScreenView */,
 				3751290B202F48D50021CA35 /* Randomable.swift */,
 				375128F2202F42B10021CA35 /* GlitchyDoo */,
 				375128F1202F42B10021CA35 /* Products */,
@@ -77,6 +82,15 @@
 				37512909202F488B0021CA35 /* Bool_ext.swift */,
 			);
 			path = GlitchyDoo;
+			sourceTree = "<group>";
+		};
+		3751290F202F6C670021CA35 /* ScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				3751290D202F4A580021CA35 /* ScreenView.swift */,
+				37512910202F6C7C0021CA35 /* ScreenFilter.swift */,
+			);
+			path = ScreenView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +168,12 @@
 			files = (
 				3751290E202F4A580021CA35 /* ScreenView.swift in Sources */,
 				3751290C202F48D50021CA35 /* Randomable.swift in Sources */,
+				37512911202F6C7C0021CA35 /* ScreenFilter.swift in Sources */,
 				375128F6202F42B10021CA35 /* MainVC.swift in Sources */,
 				3751290A202F488B0021CA35 /* Bool_ext.swift in Sources */,
 				37512907202F43600021CA35 /* LineriarVC.swift in Sources */,
 				375128F4202F42B10021CA35 /* AppDelegate.swift in Sources */,
+				37512913202F6CA70021CA35 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

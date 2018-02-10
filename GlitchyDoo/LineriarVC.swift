@@ -8,29 +8,31 @@
 
 import UIKit
 
-func slideDown<Element>(column: Int, of array: [[Element]]) -> [[Element]] {
-    guard array.first!.count > column else { return array }
-    var columnArr = array.flatMap { row in return row[column] }
-    columnArr.insert(columnArr.popLast()!, at: 0)
-    let moded: [[Element]] = array.enumerated().flatMap { row in
-        var modedRow = row.element
-        modedRow[column] = columnArr[row.offset]
-        return modedRow
-    }
-    return moded
-}
-
 class LineriarVC: UIViewController {
+    @IBOutlet private var screenView: ScreenView!
+    @IBOutlet private var colorFilterSwitch: UISwitch!
+    @IBOutlet private var positionNoiseSwitch: UISwitch!
+    
+    @IBAction private func colorSwitchChanged() {
+        updateFilters()
+    }
+    @IBAction private func positionNoiseSwitchChanged() {
+        updateFilters()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        updateFilters()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func updateFilters() {
+        var filters: [ScreenFilter] = []
+        if colorFilterSwitch.isOn { filters.append(RandomColorFilter()) }
+        if positionNoiseSwitch.isOn { filters.append(PositionNoiceFilter()) }
+        screenView.filters = filters
     }
+    
+    // MARK: - some things that generate image for virtual screen
     private var initialized: Bool = false
     private var screenData = [[UIColor]]()
     
@@ -64,7 +66,6 @@ class LineriarVC: UIViewController {
         updateCount += 1
     }
     // one lapse is height <- for movement + width idle + n of wait
-    
 }
 
 extension LineriarVC: ScreenDataSource {

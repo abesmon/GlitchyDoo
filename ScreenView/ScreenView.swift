@@ -12,39 +12,9 @@ import UIKit
     func screenViewData(_ screenView: ScreenView) -> [[UIColor]]
 }
 
-class ScreenFilter {
-    func process(layers: [[CALayer]]) {}
-}
-
-class RandomColorFilter: ScreenFilter {
-    override func process(layers: [[CALayer]]) {
-        layers.forEach { row in
-            row.forEach { columnItem in
-                columnItem.backgroundColor = Bool.random() ? UIColor.random().cgColor : columnItem.backgroundColor
-            }
-        }
-    }
-}
-
-class PositionNoiceFilter: ScreenFilter {
-    override func process(layers: [[CALayer]]) {
-        layers.forEach { row in
-            row.forEach { columnItem in
-                if Bool.random() {
-                    let position = CGPoint(
-                        x: columnItem.position.x + CGFloat.random(min: -0.2, max: 0.2),
-                        y: columnItem.position.y + CGFloat.random(min: -0.2, max: 0.2)
-                    )
-                    columnItem.frame = CGRect(origin: position, size: columnItem.frame.size)
-                }
-            }
-        }
-    }
-}
-
 @IBDesignable
 class ScreenView: UIView {
-    let dotSize = CGSize(width: 10, height: 10)
+    private let dotSize = CGSize(width: 10, height: 10)
     
     private var framesPerSecond: Int = 25
     private var screenLayers: [[CALayer]] = []
@@ -53,7 +23,7 @@ class ScreenView: UIView {
     private(set) var rows: Int!
     private(set) var columns: Int!
     
-    private var filters: [ScreenFilter] = [RandomColorFilter(), PositionNoiceFilter()]
+    var filters: [ScreenFilter] = []
     
     @IBOutlet weak var dataSource: ScreenDataSource? {
         didSet {
